@@ -1,0 +1,139 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+}
+
+a {
+	color:red;
+}
+
+/* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
+
+/* EXAMPLE CODE PLEASE REMOVE */
+
+.nav{
+	width: 100%;
+	background-color: white;
+	padding:10px;
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+
+.nav-item{
+	background:blue;
+	display:inline-block;
+	padding:5px;
+	border-radius:5px;
+	color:#000;
+	text-decoration: none;
+	cursor:pointer;
+
+
+}
+
+.nav-header{
+	color:gray;
+	display:inline-block;
+}
+
+.title{
+	width:100%;
+	
+
+}
+
+.title img {
+	width:100%;
+}
+
+.research{
+	display:flex;
+	flex-wrap: wrap;
+
+}
+
+.research-item{
+	flex:0 0 33.33%;
+	padding:10px;
+	transition: 1s;
+	cursor: zoom-in;
+}
+
+.research-item img{
+	width:100%;
+}
+
+.research-item span{
+	color:gray;
+	font-size: 18px;
+}
+
+
+.essay {
+	background-color: red;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 80px;
+
+}
+
+
+.text {
+	flex:0 0 66.66%;
+	padding:10px;
+
+
+}
+
+.text h1 {
+	font-size: 60px;
+
+}
+
+.text p {
+	margin-bottom: 10px;
+
+
+}
+
+.figure{
+	flex:0 0 33.33%;
+	padding:10px;
+}
+
+
+.figure img{
+	width:100%;
+}
+
+.figure span{
+	font-size: 18px;
+	color:gray;
+}
+
+
+
+
+/*interactive classes*/
+
+.hide{
+	display:none;
+
+}
+
+.show{
+	display:block;
+}
+
+.large{
+	flex:0 0 66.666%;
+	border:2px solid lime;
+	transition: 1s;
+	cursor: zoom-out;
+}
+
+.active{
+	background-color: red;
+}
+

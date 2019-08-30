@@ -1,0 +1,72 @@
+body {
+  background-image: linear-gradient(aqua, yellow);
+
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+	color: lime
+}
+
+a {
+	color:red;
+}
+
+/* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
+
+/* EXAMPLE CODE PLEASE REMOVE */
+.bio {
+
+	font-size:25px;
+	color: black;
+	text-orientation: top;
+	font-family: "avenir";
+	margin-left: 450px;
+	margin-right: 400px;
+	margin-top:-650;
+
+
+}
+
+.name {
+	padding: 15px;
+	font-size:25px;
+	color:black;
+	margin-top:500px;
+	margin-bottom:50px;
+	width:800px;
+	margin-left: 625px;
+	font-family: "avenir";
+
+
+}
+
+
+
+.logo {
+	width:350px;
+	margin-top: -700px;
+	margin-left:425px;
+	font-family: "courier new";
+	color:yellow;
+}
+
+.logo img {
+	width: 170%;
+}
+
+
+
