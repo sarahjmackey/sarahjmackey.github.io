@@ -1,6 +1,7 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
+	padding-top: 80px
 }
 
 a {
@@ -16,48 +17,42 @@ a {
 	background-color: white;
 	padding:10px;
 	position:fixed;
-	top:0px;
+	top:10px;
 	left:0px;
 }
 
 .nav-item{
 	background:blue;
 	display:inline-block;
-	padding:5px;
+	padding:10px;
 	border-radius:5px;
 	color:#000;
 	text-decoration: none;
+	color:white;
 	cursor:pointer;
 
 
 }
 
 .nav-header{
-	color:gray;
+	color:magenta;
 	display:inline-block;
 }
 
-.title{
-	width:100%;
-	
-
-}
-
-.title img {
-	width:100%;
-}
 
 .research{
 	display:flex;
 	flex-wrap: wrap;
+	margin-top: 80px;
 
 }
 
 .research-item{
-	flex:0 0 33.33%;
+	flex:0 0 20%;
 	padding:10px;
 	transition: 1s;
 	cursor: zoom-in;
+
 }
 
 .research-item img{
@@ -65,34 +60,43 @@ a {
 }
 
 .research-item span{
-	color:gray;
-	font-size: 18px;
+	color:blue;
+	font-size: 14px;
 }
 
 
 .essay {
-	background-color: red;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 80px;
+	margin-top: 0px;
 
 }
 
 
 .text {
-	flex:0 0 66.66%;
-	padding:10px;
+	flex:0 0 80%;
+	padding:50px;
 
 
 }
 
 .text h1 {
-	font-size: 60px;
+	font-size: 50px;
+	padding-bottom: 20px;
+	color: yellow;
+
+}
+
+.text h2 {
+	font-size: 20px;
+	color:magenta;
 
 }
 
 .text p {
 	margin-bottom: 10px;
+	font-size: 20px;
+	color:blue;
 
 
 }
@@ -108,8 +112,8 @@ a {
 }
 
 .figure span{
-	font-size: 18px;
-	color:gray;
+	font-size: 14px;
+	color:magenta;
 }
 
 
@@ -127,13 +131,13 @@ a {
 }
 
 .large{
-	flex:0 0 66.666%;
-	border:2px solid lime;
+	flex:0 0 35%;
+	border:2px
 	transition: 1s;
 	cursor: zoom-out;
 }
 
 .active{
-	background-color: red;
+	background-color: yellow;
 }
 

@@ -16,14 +16,14 @@ $(document).ready(function(){
 		$('.research-item').addClass('hide');
 	}
 
-	$('.btn-car').click(function(){
+	$('.btn-aussie').click(function(){
 		hideAll();
-		$('.car').removeClass('hide');
+		$('.aussie').removeClass('hide');
 	});
 
-	$('.btn-kinect').click(function(){
+	$('.btn-overseas').click(function(){
 		hideAll();
-		$('.kinect').removeClass('hide');
+		$('.overseas').removeClass('hide');
 	});
 
 	$('.btn-all').click(function(){
@@ -31,9 +31,14 @@ $(document).ready(function(){
 		$('.all').removeClass('hide');
 	});
 
-	$('.btn-tracking').click(function(){
+	$('.btn-cafe').click(function(){
 		hideAll();
-		$('.tracking').removeClass('hide');
+		$('.cafe').removeClass('hide');
+	});
+
+	$('.btn-rest').click(function(){
+		hideAll();
+		$('.rest').removeClass('hide');
 	});
 
 
