@@ -1,0 +1,41 @@
+body {
+	font-family: courier;
+	font-size: 24px;
+}
+
+a {
+	color:red;
+}
+
+.fullscreen {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	background-color: blue;
+}
+
+.fullscreen-title {
+	text-transform: uppercase;
+	font-size: 10vw;
+	text-align: center;
+	color: lime;
+}
+
+.main {
+	width: 60%;
+	margin: auto;
+}
+
+p {
+	margin-top: 20px;
+}
+
+img {
+	width:480px;
+	margin: auto;
+	display: block;
+	margin-top: 20px;
+}
+

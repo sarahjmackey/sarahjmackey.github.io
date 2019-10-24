@@ -1,150 +1,528 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
-	background-color:black;
-	color:white;
+
 }
 
 a {
-	color:red;
+	color:yellow;
 }
 
 /*Index Homepage*/
 
+.title {
+  color: magenta;
+  background-color: black;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-bottom: 40px;
+}
+
+
+.index {
+  background-color: black;
+}
+
+.index-copy {
+  background-color: black;
+}
+
 .index-intro {
-	font-size:18px;
-	margin-bottom:25vh;
-	padding:10px;
+  font-size:18px;
+  margin-bottom:25vh;
+  padding:10px;
+  color: white;
+
 
 }
 
 .index-row {
-	display:flex;
-	flex-wrap: wrap;
-	padding:10px;
-	margin-bottom: 5px;
-	margin-top: 5px;
-	border-top:2px solid white;
+  display:flex;
+  flex-wrap: wrap;
+  padding:10px;
+  margin-bottom: 5px;
+  margin-top: -200px;
+  border-top:2px solid white;
 
 }
 
 .index-name {
-	flex: 0 0 50%;
+  flex: 0 0 50%;
+  color: white;
+  cursor: pointer;
 
 }
 
 .index-layer {
-	flex: 0 0 25%;
+  flex: 0 0 25%;
+  color: white;
 }
 
 .index-tag {
-	flex: 0 0 25%;
+  flex: 0 0 25%;
+  color: white;
+}
+
+/*copper*/
+.copper-container {
+  
+  display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.copper-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 70%;
+    
+}
+
+.copper {
+  position: absolute;
+  top:0px;
+  left:0px;
+  display: flex;
+  width:100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.label {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 18vw;
+  color:#66ff99;
+  text-align: center;
+}
+
+.copper-text {
+  position: absolute;
+  bottom: 30px;
+    left: 220px;
+    color: #66ff99;
+}
+
+/*dirt*/
+.cloud-pattern {
+  display: flex;
+  flex-wrap: wrap;
+  padding:10px;
+
+}
+
+.cloud-circle {
+  width: 7vw;
+  height: 14vh;
+  background-image: linear-gradient(green, white, #8B4513);
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 35px;
+
+}
+
+/*discount*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 12vw;
+  color:yellow;
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+.one {
+  width: 200px;
+  height:200px;
+  background-color:yellow;
+  top:-100%; right:-100%; left:-100%; bottom:-100%;
+  margin-left: 100px;
+  margin-top: 100px;
+  z-index:0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 7vw;
+  color:#66ff99;
+  
+  /*   add your animation name and settings here */
+  animation-name:spinUG;
+  animation-duration:7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  0% {
+    transform:rotate(0deg);
+  }
+  
+  100% {
+    transform:rotate(360deg);
+  }
+  
+ }
+
+.two {
+  width: 200px;
+  height:200px;
+  background-color:magenta;
+  position: fixed;
+  top:-100%; right:-100%; left:-100%; bottom:-100%;
+  margin:auto;
+  z-index:0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 7vw;
+  color:yellow;
+  text-align: center;
+  /*   add your animation name and settings here */
+  animation-name:spinUG;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  0% {
+    transform:rotate(0deg);
+  }
+  
+  100% {
+    transform:rotate(360deg);
+  }
+  
+  
+}
+
+.three {
+  width: 200px;
+  height:200px;
+  background-color:#66ff99;
+  top:-100%; right:-100%; left:-100%; bottom:-100%;
+  margin-left: 1150px;
+  margin-top: 10px;
+  z-index:0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 7vw;
+  color:magenta;
+  
+  /*   add your animation name and settings here */
+  animation-name:spinUG;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  0% {
+    transform:rotate(0deg);
+  }
+  
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+
+/*GPS*/
+
+.circle-one {
+  width: 200px;
+  height:200px;
+  background:linear-gradient(red, green, blue);
+  position: fixed;
+  top:-150%; right:-50%; left:-100%; bottom:-100%;
+  margin:auto;
+  border-radius: 100px;
+  z-index:0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 7vw;
+  color:yellow;
+  text-align: center;
+  /*   add your animation name and settings here */
+  animation-name:spinUG;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  0% {
+    transform:rotate(0deg);
+  }
+  
+  100% {
+    transform:rotate(360deg);
+  }
+}
+.circle-two {
+  width: 200px;
+  height:200px;
+  background:linear-gradient(red, green, blue);
+  position: fixed;
+  top:-100%; right:-100%; left:-100%; bottom:-100%;
+  margin:auto;
+  border-radius: 100px;
+  z-index:0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 7vw;
+  color:yellow;
+  text-align: center;
+  /*   add your animation name and settings here */
+  animation-name:spinUG;
+  animation-duration:6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  0% {
+    transform:rotate(0deg);
+  }
+  
+  100% {
+    transform:rotate(360deg);
+  }
+
+}
+
+.circle-three {
+  width: 200px;
+  height:200px;
+  background:linear-gradient(red, green, blue);
+  position: fixed;
+  top:-100%; right:-100%; left:-50%; bottom:-150%;
+  margin:auto;
+  border-radius: 100px;
+  z-index:0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 7vw;
+  color:yellow;
+  text-align: center;
+  /*   add your animation name and settings here */
+  animation-name:spinUG;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  0% {
+    transform:rotate(0deg);
+  }
+  
+  100% {
+    transform:rotate(360deg);
+  }
+}
+.g {
+  width: 200px;
+  height:200px;
+  position: fixed;
+  top:-100%; right:-100%; left:-119%; bottom:-100%;
+  margin:auto;
+  border-radius: 100px;
+  z-index:0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 15vw;
+  color:green;
+}
+.p {
+  width: 200px;
+  height:200px;
+  position: fixed;
+  top:-150%; right:-100%; left:-148%; bottom:-100%;
+  margin:auto;
+  border-radius: 100px;
+  z-index:0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 15vw;
+  color:red;
+}
+.s {
+  width: 200px;
+  height:200px;
+  position: fixed;
+  top:-100%; right:-100%; left:-89%; bottom:-150%;
+  margin:auto;
+  border-radius: 100px;
+  z-index:0;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 15vw;
+  color:blue;
 }
 
 
 /*ip address*/
 
 .ip {
-	background-color:magenta;
-	height:100vh;
-	width:100vw;
-	display:flex;
-	align-items:center;
-	justify-content:center;
+  background-color:magenta;
+  height:100vh;
+  width:100vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
 }
 
 .ip-text {
-	font-size:14vw;
-	text-align: center;
+  font-size:14vw;
+  text-align: center;
+  color: white;
 
 
+}
+
+/*lithium*/
+
+.lithium {
+  position: relative;
+  text-align: center;
+  display: flex;
+  width:100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+
+.battery img { 
+  width: 100%;
+  object-fit: fill;
+}
+
+.charging {
+  color: red;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.charging-two {
+  color: yellow;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  position: absolute;
+}
+
+.charged {
+  color: green;
+  top: 75%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  position: absolute;
 }
 
 /*checkers*/
-
 .checkers {
-	display:flex;
-	flex-wrap:wrap;
-
-}
-
-.checkers-white {
-	width:50vw;
-	height:50vh;
-	background-color:white;
+  width:100vw;
+  height:100vh;
+  display:flex;
+  flex-wrap:wrap;
 
 }
 
 .checkers-black {
-	width:50vw;
-	height:50vh;
-	background-color:black;
+  flex:0 0 50%;
+  height:50vh;
+  background-color:black;
 
 }
+
+.checkers-white {
+  flex:0 0 50%;
+  height:50vh;
+  background-color:white;
+
+}
+
 
 /*checkers type*/
 
 .checkers-type {
-	width:100vw;
-	height:100vh;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	position:fixed;
-	left:0;
-	top:0;
+position: fixed;
+align-items: center;
+
 }
 
 .checkers-text {
-	font-size:30vw;
-	color:magenta;
-	border:30px solid magenta;
-	padding:2vw;
-	border-radius: 5vw;
-
-}
-/*cloud pattern*/
-
-.cloud-pattern {
-	display:flex;
-	flex-wrap:wrap;
-}
-
-.cloud-circle {
-	width:25vw;
-	height:33.33vh;
-	background-image:linear-gradient(blue,white);
-	border-radius: 50%;
-
-}
-
-.chip-container {
-	width:100vw;
-	height:100vh;
-	display:flex;
-	align-items: center;
-	justify-content:center;
-
-}
-
-.chip {
-	width:60vh;
-	height:60vh;
-	display:flex;
-	align-items: center;
-	justify-content:center;
-	border:1px solid gray;
-	padding:5vh;
+font-size: 25vh;
+color: lime;
+text-align: center;
 
 
 }
 
-.text {
-	font-size:5vw;
-	color:gray;
-	
+/*outline*/
+
+.layers {
+  
+
 }
+
+.inner-core {
+  height: 40vh;
+  width: 100%;
+  background-color: yellow;
+  color:white;
+  align-content: space-between;
+  font-family: Helvetica,Arial,sans-serif;
+  text-align: center;
+  padding-top: 170px;
+  font-size: 7vh;
+
+}
+
+.outer-core {
+  font-size:10vh;
+  text-align: center;
+  width:100%;
+  color:red;
+  background-color: orange;
+  padding: 8px;
+}
+
+.mantle {
+  font-size: 15vh;
+  text-align: center;
+  width:100%;
+  color:magenta;
+  background-color: purple;
+  padding: 35px;
+}
+
+.crust {
+  font-size: 25vh;
+  text-align: center;
+  width:100%;
+  color:lime;
+  background-color: blue;
+  
+ 
+
+}
+
 
 
 

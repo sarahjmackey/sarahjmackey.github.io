@@ -24,41 +24,31 @@ body {
 
 
 .logo {
-	display:flex;
-	flex:0 0 10%;
-	flex-wrap: wrap;
-	size: 10px;
-	margin-top:-700px;
+	
+	margin-top: -70px;
+	font-family: Arial,light,sans-serif;
+	font-size: 20px;
+	color: black;
+	margin-left:auto;
+	margin-right: auto;
+	width: 50%;
+	
+	
+  	
+}
+.text {
+	margin-top:auto;
+	text-align: center;
 
 
 }
 
 .logo img {
-	width: 50%;
-}
-
-.center {
-	display: block;
-	margin-left:auto;
-	margin-right: auto;
-	width: 50%;
+	width: 100%;
+	object-fit: fill;
 
 }
 
-
-.info {
-	font-family: Arial,light,sans-serif;
-	font-size: 25px;
-	color: black;
-	text-align: center;
-	display:flex;
-	flex:0 0 10%;
-	flex-wrap: wrap;
-	margin-top:600px;
-	margin-left: 150px;
-	margin-right: 150px;
-
-}
 
 
 .nav{
