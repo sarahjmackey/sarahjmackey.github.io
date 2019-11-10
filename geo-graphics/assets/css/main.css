@@ -76,10 +76,24 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 120px;
     width: 70%;
     
 }
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(3.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
 
 .copper {
   position: absolute;
@@ -95,7 +109,7 @@ a {
 
 .label {
   font-family: Helvetica,Arial,sans-serif;
-  font-size: 18vw;
+  font-size: 10vw;
   color:#66ff99;
   text-align: center;
 }
@@ -413,8 +427,19 @@ a {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  position: relative;
+  -webkit-animation: blue 4s infinite;
+  animation: blue 4s infinite;
 }
+
+@-webkit-keyframes blue {
+    0%   {border: 2px solid orange; left:-300px; top:50px;}
+    25%  {border: 2px solid red; left:100px; top:50px;}
+    50%  {border: 2px solid yellow; left:-300px; top:50px;}
+    75%  {border: 2px solid orange; left:100px; top:50px;}
+    100% {border: 2px solid orange; left:-300px; top:50px;}
+}
+
 
 .charging-two {
   color: yellow;
@@ -423,7 +448,20 @@ a {
   transform: translate(-50%, -50%);
   font-size: 50px;
   position: absolute;
+    position: relative;
+  -webkit-animation: violet 4s infinite;
+  animation: violet 4s infinite;
 }
+
+@-webkit-keyframes violet {
+    0%   {border: 2px solid orange; left:30px; top:100px;}
+    25%  {border: 2px solid red; left:-400px; top:100px;}
+    50%  {border: 2px solid yellow; left:30px; top:100px;}
+    75%  {border: 2px solid orange; left:-400px; top:100px;}
+    100% {border: 2px solid orange; left:30px; top:100px;}
+}
+
+
 
 .charged {
   color: green;
@@ -432,7 +470,19 @@ a {
   transform: translate(-50%, -50%);
   font-size: 100px;
   position: absolute;
+  position: relative;
+  -webkit-animation: magenta 4s infinite;
+  animation: magenta 4s infinite;
 }
+
+@-webkit-keyframes magenta {
+    0%   {border: 2px solid orange; left:-500px; top:200px;}
+    25%  {border: 2px solid red; left:10px; top:200px;}
+    50%  {border: 2px solid yellow; left:-500px; top:200px;}
+    75%  {border: 2px solid orange; left:10px; top:200px;}
+    100% {border: 2px solid orange; left:-500px; top:200px;}
+}
+
 
 /*checkers*/
 .checkers {
@@ -523,6 +573,151 @@ text-align: center;
 
 }
 
+/*Spheres*/
+
+.specks-containers {
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  text-align: center;
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
 
 
+.motion-one {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ff7600;
+  position: relative;
+  -webkit-animation: circle 4s infinite;
+  animation: circle 4s infinite;
+}
 
+@-webkit-keyframes circle {
+    0%   {border: 2px solid orange; left:500px; top:500px;}
+    25%  {border: 2px solid red; left:800px; top:200px;}
+    50%  {border: 2px solid yellow; left:200px; top:60px;}
+    75%  {border: 2px solid orange; left:50px; top:200px;}
+    100% {border: 2px solid orange; left:0px; top:0px;}
+}
+
+.motion-two {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ff7600;
+  position: relative;
+  -webkit-animation: pink 4s infinite;
+  animation: pink 4s infinite;
+}
+
+@-webkit-keyframes pink {
+    0%   {border: 2px solid orange; left:1500px; top:500px;}
+    25%  {border: 2px solid red; left:160px; top:10px;}
+    50%  {border: 2px solid yellow; left:200px; top:60px;}
+    75%  {border: 2px solid orange; left:100px; top:100px;}
+    100% {border: 2px solid orange; left:1150px; top:150px;}
+}
+
+.motion-three {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ff7600;
+  position: relative;
+  -webkit-animation: orange 4s infinite;
+  animation: orange 4s infinite;
+}
+
+@-webkit-keyframes orange {
+    0%   {border: 2px solid orange; left:500px; top:500px;}
+    25%  {border: 2px solid red; left:900px; top:200px;}
+    50%  {border: 2px solid yellow; left:200px; top:60px;}
+    75%  {border: 2px solid orange; left:50px; top:600px;}
+    100% {border: 2px solid orange; left:200px; top:450px;}
+}
+
+.motion-four {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ff7600;
+  position: relative;
+  -webkit-animation: red 4s infinite;
+  animation: red 4s infinite;
+}
+
+@-webkit-keyframes red {
+    0%   {border: 2px solid orange; left:1100px; top:500px;}
+    25%  {border: 2px solid red; left:400px; top:200px;}
+    50%  {border: 2px solid yellow; left:200px; top:60px;}
+    75%  {border: 2px solid orange; left:1000px; top:600px;}
+    100% {border: 2px solid orange; left:200px; top:300px;}
+}
+
+.motion-five {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ff7600;
+  position: relative;
+  -webkit-animation: lime 4s infinite;
+  animation: lime 4s infinite;
+}
+
+@-webkit-keyframes lime {
+    0%   {border: 2px solid orange; left:100px; top:50px;}
+    25%  {border: 2px solid red; left:1400px; top:300px;}
+    50%  {border: 2px solid yellow; left:200px; top:60px;}
+    75%  {border: 2px solid orange; left:100px; top:400px;}
+    100% {border: 2px solid orange; left:800px; top:300px;}
+}
+
+.motion-six{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ff7600;
+  position: relative;
+  -webkit-animation: yellow 4s infinite;
+  animation: yellow 4s infinite;
+}
+
+@-webkit-keyframes yellow {
+    0%   {border: 2px solid orange; left:1300px; top:200px;}
+    25%  {border: 2px solid red; left:400px; top:200px;}
+    50%  {border: 2px solid yellow; left:200px; top:60px;}
+    75%  {border: 2px solid orange; left:1300px; top:600px;}
+    100% {border: 2px solid orange; left:100px; top:300px;}
+}

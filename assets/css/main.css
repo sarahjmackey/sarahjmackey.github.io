@@ -11,6 +11,7 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
 }
 
 
@@ -32,13 +33,16 @@ body {
 	margin-left:auto;
 	margin-right: auto;
 	width: 50%;
+	padding-top: 90px;
 	
 	
   	
 }
 .text {
-	margin-top:auto;
+	margin-top:-60px;
 	text-align: center;
+
+
 
 
 }
