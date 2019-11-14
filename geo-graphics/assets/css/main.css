@@ -9,6 +9,16 @@ a {
 }
 
 /*Index Homepage*/
+.geo-home {
+  background-color:black;
+  position: fixed;
+  margin-left: 1200px;
+  margin-top: 50px;
+  }
+.home-button {
+  color: lime;
+  background-color:black;
+}
 
 .title {
   color: magenta;
@@ -40,7 +50,7 @@ a {
   display:flex;
   flex-wrap: wrap;
   padding:10px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   margin-top: -200px;
   border-top:2px solid white;
 
@@ -76,21 +86,9 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 120px;
+    margin-top: 35px;
     width: 70%;
     
-}
-
-.zoom {
-  padding: 50px;
-  transition: transform .2s; /* Animation */
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
-
-.zoom:hover {
-  transform: scale(3.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 
@@ -109,7 +107,7 @@ a {
 
 .label {
   font-family: Helvetica,Arial,sans-serif;
-  font-size: 10vw;
+  font-size: 20vw;
   color:#66ff99;
   text-align: center;
 }
@@ -136,6 +134,7 @@ a {
   border-radius: 50%;
   text-align: center;
   padding-top: 35px;
+  color: white;
 
 }
 
@@ -169,13 +168,13 @@ a {
   color:#66ff99;
   
   /*   add your animation name and settings here */
-  animation-name:spinUG;
+  animation-name:spinUGONE;
   animation-duration:7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
 }
 /*   add your starting state and your end state  */
-@keyframes spinUG {
+@keyframes spinUGONE {
   
   0% {
     transform:rotate(0deg);
@@ -200,13 +199,13 @@ a {
   color:yellow;
   text-align: center;
   /*   add your animation name and settings here */
-  animation-name:spinUG;
+  animation-name:spinUGTWO;
   animation-duration:10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
 }
 /*   add your starting state and your end state  */
-@keyframes spinUG {
+@keyframes spinUGTWO {
   
   0% {
     transform:rotate(0deg);
@@ -232,13 +231,13 @@ a {
   color:magenta;
   
   /*   add your animation name and settings here */
-  animation-name:spinUG;
+  animation-name:spinUGTHREE;
   animation-duration:5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
 }
 /*   add your starting state and your end state  */
-@keyframes spinUG {
+@keyframes spinUGTHREE {
   
   0% {
     transform:rotate(0deg);
@@ -266,13 +265,13 @@ a {
   color:yellow;
   text-align: center;
   /*   add your animation name and settings here */
-  animation-name:spinUG;
+  animation-name:spinUGGG;
   animation-duration:2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
 }
 /*   add your starting state and your end state  */
-@keyframes spinUG {
+@keyframes spinUGGG {
   
   0% {
     transform:rotate(0deg);
@@ -296,13 +295,13 @@ a {
   color:yellow;
   text-align: center;
   /*   add your animation name and settings here */
-  animation-name:spinUG;
+  animation-name:spinUGPP;
   animation-duration:6s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
 }
 /*   add your starting state and your end state  */
-@keyframes spinUG {
+@keyframes spinUGPP {
   
   0% {
     transform:rotate(0deg);
@@ -328,13 +327,13 @@ a {
   color:yellow;
   text-align: center;
   /*   add your animation name and settings here */
-  animation-name:spinUG;
+  animation-name:spinUGSS;
   animation-duration:10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
 }
 /*   add your starting state and your end state  */
-@keyframes spinUG {
+@keyframes spinUGSS {
   
   0% {
     transform:rotate(0deg);
@@ -433,11 +432,11 @@ a {
 }
 
 @-webkit-keyframes blue {
-    0%   {border: 2px solid orange; left:-300px; top:50px;}
-    25%  {border: 2px solid red; left:100px; top:50px;}
-    50%  {border: 2px solid yellow; left:-300px; top:50px;}
-    75%  {border: 2px solid orange; left:100px; top:50px;}
-    100% {border: 2px solid orange; left:-300px; top:50px;}
+    0%   {left:-300px; top:50px;}
+    25%  { left:100px; top:50px;}
+    50%  {left:-300px; top:50px;}
+    75%  {left:100px; top:50px;}
+    100% {left:-300px; top:50px;}
 }
 
 
@@ -454,11 +453,11 @@ a {
 }
 
 @-webkit-keyframes violet {
-    0%   {border: 2px solid orange; left:30px; top:100px;}
-    25%  {border: 2px solid red; left:-400px; top:100px;}
-    50%  {border: 2px solid yellow; left:30px; top:100px;}
-    75%  {border: 2px solid orange; left:-400px; top:100px;}
-    100% {border: 2px solid orange; left:30px; top:100px;}
+    0%   {left:30px; top:100px;}
+    25%  {left:-400px; top:100px;}
+    50%  {left:30px; top:100px;}
+    75%  {left:-400px; top:100px;}
+    100% {left:30px; top:100px;}
 }
 
 
@@ -476,11 +475,11 @@ a {
 }
 
 @-webkit-keyframes magenta {
-    0%   {border: 2px solid orange; left:-500px; top:200px;}
-    25%  {border: 2px solid red; left:10px; top:200px;}
-    50%  {border: 2px solid yellow; left:-500px; top:200px;}
-    75%  {border: 2px solid orange; left:10px; top:200px;}
-    100% {border: 2px solid orange; left:-500px; top:200px;}
+    0%   {left:-500px; top:200px;}
+    25%  {left:10px; top:200px;}
+    50%  {left:-500px; top:200px;}
+    75%  {left:10px; top:200px;}
+    100% {left:-500px; top:200px;}
 }
 
 
@@ -490,6 +489,7 @@ a {
   height:100vh;
   display:flex;
   flex-wrap:wrap;
+
 
 }
 
@@ -511,16 +511,24 @@ a {
 /*checkers type*/
 
 .checkers-type {
+margin-left:32%;
+margin-top:17%;
+padding: 10px;
 position: fixed;
-align-items: center;
+
+
 
 }
 
 .checkers-text {
+width:480px;
+align-items: center;
 font-size: 25vh;
 color: lime;
 text-align: center;
-
+border-style: solid;
+border-width: 10px;
+border-radius: 5px;
 
 }
 
@@ -573,7 +581,7 @@ text-align: center;
 
 }
 
-/*Spheres*/
+/*Specks*/
 
 .specks-containers {
   width: 100%;
@@ -721,3 +729,109 @@ text-align: center;
     75%  {border: 2px solid orange; left:1300px; top:600px;}
     100% {border: 2px solid orange; left:100px; top:300px;}
 }
+
+
+
+
+/*metadata*/
+.table {
+  
+  display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.table img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    width: 50%;
+    
+}
+
+.box {
+  width: 200px;
+  height:200px;
+  background-color: red;
+  margin-left: 50px;
+  /*   add your animation name and settings here */
+  animation-name:spinUG;
+  animation-duration:2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  from {
+    width:50px;
+  }
+  
+  to {
+    width:400px;
+  }
+  
+  
+}
+/*box-two*/
+.box-two {
+  width: 200px;
+  height:200px;
+  background-color: yellow;
+  margin-top:0px;
+  /*   add your animation name and settings here */
+  animation-name:spinUGG;
+  animation-duration:2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: horizontal;
+  animation-direction:horizontal;
+}
+
+/*   add your starting state and your end state  */
+@keyframes spinUGG {
+  
+  from {
+    height:50px;
+  }
+  
+  to {
+    height:400px;
+  }
+  
+  
+}
+
+/*box-three*/
+
+.box-three {
+  width: 200px;
+  height:200px;
+  background-color: green;
+  margin-top:30px;
+  /*   add your animation name and settings here */
+  animation-name:spinUGG;
+  animation-duration:2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: horizontal;
+  animation-direction:horizontal;
+}
+
+/*   add your starting state and your end state  */
+@keyframes spinUGG {
+  
+  from {
+    height:50px;
+  }
+  
+  to {
+    height:400px;
+  }
+  
+  
+}
+
+
